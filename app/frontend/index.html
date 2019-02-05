@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Food Whiz</title>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Food Court Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="css/swipebox.css">
+<link rel="stylesheet" href="css/maps.css">
+<link rel="stylesheet" href="css/form.css">
+<link rel="stylesheet" href="css/rating.css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Font-Awesome-Icons-File -->
+	<link href='fonts/fontawesome-webfont.ttf' rel='stylesheet' type='text/css'>
+<!-- //Font-Awesome-Icons-File -->
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<!-- //js -->
+<!--web-fonts-->
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
+<!--//web-fonts-->
+<!-- start-smooth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+		
+		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smooth-scrolling-->	
+</head>
+<body>
+<!--
+	<div class="form_container">
+        <form class="complex_form" id="signin">
+      		<div class="form_title">Sign In</div>
+          <input type="text" id="username" class="form_element" placeholder="Enter your username"/>
+          <input type="password" id="password" class="form_element" placeholder="Enter your password"/>
+          <button type="button" class="btn" id="signin_enter">Sign In</button>
+		  <button type="button" class="btn" id="signin_cancel">Cancel</button>
+        </form>
+    </div>
+	-->
+	<div id="id01" class="modal">
+  
+	  <form class="modal-content animate">
+
+	    <div class="container">
+	      <label><b>Username</b></label>
+	      <input type="text" id="username" placeholder="Enter Username" name="uname" required>
+
+	      <label><b>Password</b></label>
+	      <input type="password" id="password" placeholder="Enter Password" name="psw" required>
+
+	      <div id="error"></div>
+	        
+	      <button type="submit" id="signin_enter">Login</button>
+	    </div>
+
+	    <div class="container" style="background-color:#f1f1f1">
+	      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	    </div>
+	  </form>
+	</div>
+	
+	<div id="id02" class="modal">
+  
+	  <form class="modal-content animate">
+
+	    <div class="container">
+	      <label><b>Username</b></label>
+	      <input type="text" id="new_username" placeholder="Enter Username" name="uname" required>
+
+	      <label><b>Password</b></label>
+	      <input type="password" id="new_password" placeholder="Enter Password" name="psw" required>
+
+	      <label><b>Address</b></label>
+		  <input id="autocomplete_su" placeholder="Enter your address" type="text" required>
+		  <label><b>Favourite Categories (Choose at least one)</b></label><br>
+			<input type="checkbox" class="fav_category" value="american">American
+			<input type="checkbox" class="fav_category" value="chineese">Chineese
+			<input type="checkbox" class="fav_category" value="american">Thai
+			<input type="checkbox" class="fav_category" value="mexican">Mexican
+			<input type="checkbox" class="fav_category" value="american">Italian
+			<input type="checkbox" class="fav_category" value="chineese">Caribbean
+			<input type="checkbox" class="fav_category" value="halal">Halal
+	      <button type="submit" id="signup_enter">Sign Up</button>
+	      <div>
+	      </div>
+	    </div>
+
+	    <div class="container" style="background-color:#f1f1f1">
+	      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+	    </div>
+	  </form>
+	</div>
+	<!--banner-->
+	<div class="banner">		
+		<!--header-->
+		<div class="header">
+			<div class="container">
+
+				<div class="header-left">	
+
+				</div> 
+				<div class="acc">
+						<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="login">Login</button>
+						<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" id="signup">Sign Up</button>
+						<button style="width:auto; display:none;" id="signout">Sign Out</button>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="top-nav">
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<button type="buttfa faon" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">						
+				</button>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="hvr-bounce-to-bottom active"><a href="index.html">Home</a></li>
+						<li class="hvr-bounce-to-bottom"><a href="#about" class="scroll">About</a></li>
+						<li class="hvr-bounce-to-bottom"><a href="#contact" class="scroll">Contact Us</a></li>
+					</ul>	
+					<div class="clearfix"> </div>
+				</div>	
+			</div>
+		</nav>		
+	</div>	
+	</div>
+	
+	<!--//banner-->
+	<p class='main_title_index'>Food Whiz</p>
+<!--map-->
+
+	<div class="map_header"> Please Enter a Location</div>
+	<div id="locationField">
+      <input id="autocomplete" placeholder="Enter your address" type="text" />
+      <button id="mylocation">Current Location</button>
+      	<div id="opennow">Open Now
+	  	<label class="switch">
+		  <input id="openbox" onchange="search()" type="checkbox" >
+		  <div class="slider round"></div>
+		</label>
+		</div>
+      	<div class="radius_box">
+      	  <div id="distance">Distance</div>
+		  <select class="radius_dropdown" id="radius" onchange="search()">
+		    <option value=500>1/2 km</option>
+		    <option value=1000>1 km</option>
+		    <option value=1500>1.5 km</option>
+		    <option value=2000>2 km</option>
+		    <option value=2500>2.5 km</option>
+		    <option value=3000>3 km</option>
+		    <option value=3500>3.5 km</option>
+		    <option value=4000>4 km</option>
+		    <option value=4500>4.5 km</option>
+		    <option value=5000>5 km</option>
+		  </select>
+	  	</div>
+	  	<div class="location_box">
+      	  <div id="distance">Category</div>
+		  <select class="category_dropdown" id="category" onchange="search()">
+		    <option value="">All</option>
+		    <option value="american">American</option>
+		    <option value="canadian">Canadian</option>
+		    <option value="halal">Halal</option>
+		    <option value="thai">Thai</option>
+		    <option value="fast food">Fast Food</option>
+		    <option value="mexican">Mexican</option>
+		    <option value="italian">Italian</option>
+		    <option value="chineese">Chineese</option>
+		    <option value="greek">Greek</option>
+		    <option value="caribbean">Caribbean</option>
+		    <option value="mediterranean">Mediterranean</option>
+		    <option value="sushi">Sushi</option>
+		  </select>
+	  	</div>
+    </div>
+	<div class="map">
+	    <div id="map"></div>
+
+	    <div id="listing">
+	      <table id="resultsTable">
+	        <tbody id="results"></tbody>
+	      </table>
+	    </div>
+	    <div style="display: none">
+	      <div id="info-content">
+	        <table>
+	          <tr id="iw-url-row" class="iw_table_row">
+	            <td id="iw-icon" class="iw_table_icon"></td>
+	            <td id="iw-url"></td>
+	          </tr>
+	          <tr id="iw-address-row" class="iw_table_row">
+	            <td class="iw_attribute_name">Address:</td>
+	            <td id="iw-address"></td>
+	          </tr>
+	          <tr id="iw-phone-row" class="iw_table_row">
+	            <td class="iw_attribute_name">Telephone:</td>
+	            <td id="iw-phone"></td>
+	          </tr>
+	          <tr id="iw-rating-row" class="iw_table_row">
+	            <td class="iw_attribute_name">Rating:</td>
+	            <td id="iw-rating"></td>
+	          </tr>
+	          <tr id="iw-website-row" class="iw_table_row">
+	            <td class="iw_attribute_name">Website:</td>
+	            <td id="iw-website"></td>
+	          </tr>
+	          <tr id="iw-open-row" class="iw_table_row">
+	          	<td id="iw-openstatus"></td>
+	          </tr>
+	        </table>
+	      </div>
+	    </div>
+	</div>
+	<!--//map-->
+	<!--about-->
+	<div id="about" class="about">
+		<div class="container">
+			<h3 class="title">About</h3>
+			<h6>Food Whiz is a site which helps you find a Restaurant near you! Simply input an address and it will provide you with many options. We hope you find what you're looking for.</h6>
+				<div class="col-md-6 col-sm-6 about-grids about-top-left">
+					<div class="col-md-10 col-sm-10 about-text about-text1">
+						<h4>Sign up</h4>
+						<p>Sign up and login to save any Restaurants you have found. Recommendations will be provided as well.</p>
+					</div>
+					<div class="col-md-2 col-sm-2 about-icon">
+						<i class="fa fa-cog" aria-hidden="true"></i>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="col-md-6 col-sm-6 about-grids about-top-right">
+					<div class="col-md-2 col-sm-2 about-icon">
+						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+					</div>
+					<div class="col-md-10 col-sm-10 about-text about-text2">
+						<h4>Search anywhere</h4>
+						<p>Simply enter an address and any nearby Restuarants will be provided. You can search anywhere in the World!</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+		</div>
+	</div>
+	<!--//about-->
+
+	<!--contact-->
+	<div class="contact" id="contact">
+		<div class="container">
+			<h3 class="title">Contact Us</h3>
+				<div class="col-md-7 col-sm-7 contact-left">
+					<form action="#" method="post">
+						<img src="images/contact_us.jpg">
+					</form>
+				</div>
+				<div class="col-md-5 col-sm-5 contact-right">
+					<h4>Contact Info</h4>
+					<p>If you think there any problems with the site and would like to inquire about something, please let us know!</p>
+					<p>We will try our best to fix the problem.</p>
+					<div class="con-right-grid3">
+						<div class="col-md-1 col-sm-1 contact-icon">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</div>
+						<div class="col-md-11 col-sm-11 contact-text">
+							<h5><a href="mailto:example@mail.com">foodwhiz@gmail.com</a></h5>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>	
+		</div>
+	</div>
+	
+	<!--//contact-->
+	<!--footer-->
+	<div class="footer">
+		<div class="container">			
+			<p>© 2018 Food Whiz . All rights reserved</p>
+		</div>	
+	</div>
+	<!--//footer-->
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<script>
+	// Get the modal
+	var modal = document.getElementById('id01');
+	var modal2 = document.getElementById('id02');
+	var modal3 = document.getElementById('restaurant');
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
+	    if (event.target == modal2) {
+	        modal2.style.display = "none";
+	    }
+	    if (event.target == modal3) {
+	        modal3.style.display = "none";
+	    }
+	}
+	</script>
+
+	<!-- Restaurant Modal -->
+	<div id="restaurant" class="w3-modal">
+	  <div class="w3-modal-content w3-animate-zoom">
+	    <div class="w3-container w3-black w3-display-container">
+	      <span onclick="document.getElementById('restaurant').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+	      <div>
+  		<span class="star glyphicon glyphicon-star-empty"></span>
+	      </div>
+	      <h1 align="center" id="res_name"></h1>
+	  </div>
+	  <div class="w3-container">
+	      <img src="images/test.jpg" class='restaurant' id='res_image'>
+	      <p id="res_address" class='address'>Address:</p>
+	      <p id="res_rating" class='overall_rating'>Overall rating:</p>
+	      <p id="res_atmosphere" class='atmosphere'>
+		Rating:
+		<span class="starRating">
+			<input id="rating1" type="radio" name="rating" value="1">
+			<label for="rating1">1</label>
+			<input id="rating2" type="radio" name="rating" value="2">
+			<label for="rating2">2</label>
+			<input id="rating3" type="radio" name="rating" value="3">
+			<label for="rating3">3</label>
+			<input id="rating4" type="radio" name="rating" value="4">
+			<label for="rating4">4</label>
+			<input id="rating5" type="radio" name="rating" value="5">
+			<label for="rating5">5</label>
+      		</span>
+		</p>
+	      <p id="res_phone_number" class='phone_number'>Phone Number:</p>
+	      <p id='res_mon' class='open_mon'>Opening:</p>
+	      <p id='res_tues' class='open_tues'>Opening:</p>
+	      <p id='res_wed' class='open_wed'>Opening:</p>
+              <p id='res_thurs' class='open_thurs'>Opening:</p>
+              <p id='res_fri' class='open_fri'>Opening:</p>
+              <p id='res_sat' class='open_sat'>Opening:</p>
+              <p id='res_sun' class='open_sun'>Opening:</p>
+	  </div>
+	  <div class="w3-container">
+	  	<div id="disqus_thread"></div>
+        <script>
+			var disqus_shortname = 'foodwhiz';
+		    var disqus_identifier = 'ChIJ1WIA7Q7bKk0R9JK-tM30k0';
+		    var disqus_url = 'http://foodwhiz.com/ChIJ1WIA7Q7bKk0R9JK-tM30k0';
+			var disqus_config = function () { 
+			  this.language = "en";
+			};
+		    /* * * DON'T EDIT BELOW THIS LINE * * */
+		    (function() {
+		        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		    })();
+
+			/* * * Disqus Reset Function * * */
+		    var reset = function (newIdentifier, newUrl, newTitle, newLanguage) {
+		        DISQUS.reset({
+		            reload: true,
+		            config: function () {
+		                this.page.identifier = newIdentifier;
+		                this.page.url = newUrl;
+		                this.page.title = newTitle;
+		                this.language = newLanguage;
+		            }
+		        });
+		    };
+		</script>
+		<noscript><link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	</div>
+	</div>
+
+
+	<!--//smooth-scrolling-of-move-up-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbJAMTOtgR_KWxwVdRThaSc1YOWG6oPiQ&libraries=places&callback=initMap"
+        async defer></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/google.js"></script>
+    <script src="js/form.js"></script>
+
+</body>
+</html>
