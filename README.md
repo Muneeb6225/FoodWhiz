@@ -8,7 +8,9 @@ Step 1: A user may search and select a restaurant
 
 ![1](https://user-images.githubusercontent.com/22204759/52250742-41db3a00-28c7-11e9-94ce-0ca216aa12fc.PNG)
 
-Step 2: Choosing a Restaurant will display its information and has a commenting section for users to leave written reviews and such
+Step 2: Choosing a Restaurant will display its information. Each Restaurant has a commenting section where users can write written reviews and such
+
+![2](https://user-images.githubusercontent.com/22204759/52250852-c8901700-28c7-11e9-8fcf-b9b824c24d51.PNG)
 
 
 ## Key Features 
