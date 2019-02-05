@@ -3,6 +3,14 @@
 ## Description
 Food Whiz is an application which allows users to search for Fast food Restaurants near their location via Google maps. They are able to comment (with pictures) and review a selected Restuarant. They can sort Restaurants by rating, distance, type and opening & closing hours. You also have an option to create an account, which allows you to save favorite restaurants, set your preferred food categories, and get recommendations based on them.
 
+### Small Walkthrough 
+Step 1: A user may search and select a restaurant 
+
+![1](https://user-images.githubusercontent.com/22204759/52250742-41db3a00-28c7-11e9-94ce-0ca216aa12fc.PNG)
+
+Step 2: Choosing a Restaurant will display its information and has a commenting section for users to leave written reviews and such
+
+
 ## Key Features 
 * Implementing an organized, clean and resposive UI
 * Disqus API works as intended (Commenting)
