@@ -46,7 +46,6 @@ Step 2: Choosing a Restaurant will display its information. Each Restaurant has 
 ## Technology
 * Bootstrap and W3
   * CSS layout
-* AngularJS
 * NodeJS
 * Google Maps API 
   * Search Everywhere feature
